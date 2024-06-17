@@ -1,0 +1,42 @@
+.know {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    &__info {
+        margin-bottom: 40px;
+    }
+    &__info-title {
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 72px;
+        color: #000;
+
+        margin-bottom: 16px;
+    }
+    &__info-text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        color: #000;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__card {
+        width: 328px;
+        margin-bottom: 24px;
+    }
+    &__card-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &__card-image {
+        width: 88px;
+        height: 88px;
+    }
+}
