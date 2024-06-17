@@ -1,0 +1,27 @@
+.hello {
+    background-image: url(../images/background_hello.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+
+    height: 560px;
+    &__wrapper {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    &__info {
+        max-width: 600px;
+        margin-left: 65px;
+    }
+    &__info-title {
+        color: #fff;
+        font-weight: 600;
+        font-size: 80px;
+        line-height: 72px;
+        margin-bottom: 10px;
+    }
+    &__info-text {
+        color: #fff;
+    }
+}

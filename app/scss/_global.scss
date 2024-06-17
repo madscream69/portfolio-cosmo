@@ -1,0 +1,30 @@
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+body {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+
+    line-height: 32px; //потом пофиксим если что
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    //hz nado li eto, no mne ponadobilos
+    height: 100%;
+}
+.unselectable {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                    not supported by any browser */
+}

@@ -1,0 +1,89 @@
+.header {
+    height: 64px;
+
+    -webkit-box-shadow: 0px 7px 10px -1px rgba(0, 0, 0, 0.37);
+    -moz-box-shadow: 0px 7px 10px -1px rgba(0, 0, 0, 0.37);
+    box-shadow: 0px 7px 10px -1px rgba(0, 0, 0, 0.37);
+
+    &__logo,
+    &__burger {
+        padding-top: 15px;
+        z-index: 10;
+    }
+
+    &__wrapper {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__logo-title {
+        font-family: 'Red Rose', serif;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 32px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            top: -8px;
+            right: -20px;
+            background: url(../images/src/icons/logo_star.svg);
+            object-fit: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 22px;
+            height: 22px;
+        }
+    }
+
+    &__burger-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__menu {
+        padding: 30px;
+
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: relative;
+        transform: translateY(-300px);
+        opacity: 0;
+        transition: all 0.5s;
+        &--open {
+            opacity: 1;
+            transform: translateY(17px);
+
+            -webkit-box-shadow: inset 0px 5px 10px -1px rgba(0, 0, 0, 0.37);
+            -moz-box-shadow: inset 0px 5px 10px -1px rgba(0, 0, 0, 0.37);
+            box-shadow: inset 0px 5px 10px -1px rgba(0, 0, 0, 0.37);
+        }
+        z-index: 1;
+        background-color: #fff;
+    }
+    &__menu-title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        color: $black;
+        margin-bottom: 8px;
+    }
+    &__menu-item {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 8px;
+    }
+    &__menu-link {
+        color: $black;
+    }
+    &__social-list {
+        display: flex;
+    }
+    &__social-item {
+        margin-right: 4px;
+    }
+}
