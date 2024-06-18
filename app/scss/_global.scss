@@ -3,7 +3,18 @@ body {
     height: 100%;
     overflow-x: hidden;
 }
+
+// .header {
+//     flex: 1 0 auto;
+// }
+.footer {
+    flex: 0 0 auto;
+}
+
 body {
+    display: flex; //чтоб прилепить футер к низу, надо раскоментить хедер
+    flex-direction: column;
+
     font-family: 'Mulish', sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -12,7 +23,7 @@ body {
     line-height: 32px; //потом пофиксим если что
 }
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 15px;
 

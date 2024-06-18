@@ -13,7 +13,8 @@
 
         margin-bottom: 16px;
     }
-    &__info-text {
+    &__info-text,
+    &__description {
         font-weight: 400;
         font-size: 24px;
         line-height: 32px;
@@ -24,19 +25,160 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        //my new solve for flex
+        gap: 24px 32px;
     }
     &__card {
-        width: 328px;
-        margin-bottom: 24px;
+        // width: 328px;
+        // margin-bottom: 24px;
+        flex-basis: 23%;
+
+        background-color: $grey;
+        transition: all 0.5s ease-out;
+        &:hover {
+            background-color: $orange;
+        }
+        border-radius: 32px 32px 32px 0;
     }
     &__card-link {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+
+        border-radius: 32px 32px 32px 0;
+        color: $black;
+        text-align: center;
+        padding: 16px;
+        transition: all 0.5s ease-out;
+        &:hover {
+            color: #fff;
+        }
     }
     &__card-image {
-        width: 88px;
-        height: 88px;
+        max-width: 88px;
+        max-height: 88px;
+    }
+    &__card-text {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+//BASE
+.base {
+    background-image: url(../images/background_base_short.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+
+    padding-top: 120px;
+    padding-bottom: 120px;
+    &__content {
+        display: flex;
+        flex-direction: column;
+
+        width: 50%;
+    }
+    &__content-title {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 56px;
+        color: #fff;
+
+        margin-bottom: 56px;
+    }
+    &__choose {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__choose-column:last-child > .classes:last-child {
+        justify-content: start;
+    }
+    &__choose-subjects {
+        color: #fff;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 12px;
+    }
+}
+.classes {
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+.class {
+    width: 32px;
+    height: 32px;
+    // padding: 8px;
+    border-radius: 4px;
+    background-color: #fff;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+        background-color: $orange;
+        & > .class-link {
+            color: #fff;
+        }
+    }
+}
+.class-link {
+    display: block;
+    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
+
+    color: $black;
+    font-weight: 600;
+    font-size: 14px;
+}
+.coaches {
+    padding-top: 100px;
+    padding-bottom: 120px;
+    &__info {
+        display: flex;
+        flex-direction: column;
+    }
+    &__info-title {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 56px;
+        color: $black;
+        margin-bottom: 16px;
+    }
+    &__info-text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        color: $black;
+    }
+    &__list {
+        margin-top: 56px;
+        display: flex;
+        justify-content: space-between;
+        // flex-wrap: wrap;
+
+        gap: 32px;
+    }
+    &__list-item {
+        // flex-basis: 23%;
+        // comenting for adaptive
+        width: 329px;
+    }
+    &__list-image {
+        border-radius: 32px 32px 32px 0;
+        margin-bottom: 16px;
+    }
+    &__list-link {
+        display: block;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        color: $black;
+    }
+    &__list-desc {
+        font-size: 16px;
+        line-height: 24px;
+        color: $orange;
     }
 }
