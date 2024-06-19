@@ -1,7 +1,12 @@
 .footer {
-    background-image: url(../images/background_footer.webp);
+    background-image: url(../images/ufo.png), url(../images/moon.png),
+        url(../images/moon.png), url(../images/background_footer.webp);
     background-repeat: no-repeat;
     object-fit: cover;
+
+    background-blend-mode: luminosity;
+    background-position: 35% 30%, 3% 12%, 93% 11%, 0 0;
+    background-size: 220px 220px, 55px 55px, 206px 206px, cover;
 
     height: 1168px;
     padding-top: 80px;
@@ -84,4 +89,42 @@
             color: #fff;
         }
     }
+    position: relative;
+    // &::before {
+    //     content: '';
+    //     position: absolute;
+    //     top: 124px;
+    //     left: 71px;
+    //     background-image: url(../images/moon.png);
+    //     background-size: contain;
+    //     background-repeat: no-repeat;
+    //     width: 55px;
+    //     height: 55px;
+    // }
+    // &::after {
+    //     content: '';
+    //     position: absolute;
+    //     top: 114px;
+    //     right: 112px;
+    //     background-image: url(../images/moon.png);
+    //     // background-blend-mode: multiply;
+    //     background-size: contain;
+    //     background-repeat: no-repeat;
+    //     width: 206px;
+    //     height: 206px;
+    // }
+    // &__menu-agree {
+    //     position: relative;
+    // }
+    // &__menu-agree::after {
+    //     content: '';
+    //     position: absolute;
+    //     top: -100px;
+    //     right: -100px;
+    //     background-image: url(../images/src/ufo.png);
+    //     background-size: contain;
+    //     background-repeat: no-repeat;
+    //     width: 220px;
+    //     height: 220px;
+    // }
 }

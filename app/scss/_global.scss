@@ -39,3 +39,32 @@ body {
     user-select: none; /* Non-prefixed version, currently
                                     not supported by any browser */
 }
+
+.breadcrumbs {
+    padding-top: 16px;
+    &__list {
+        display: flex;
+    }
+    &__item {
+        margin-right: 8px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 24px;
+        position: relative;
+        &:not(:first-child) {
+            padding-left: 20px;
+            &::before {
+                content: '\2014';
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+        &--active > a {
+            color: #84858a;
+        }
+    }
+    &__item-link {
+        color: $black;
+    }
+}
