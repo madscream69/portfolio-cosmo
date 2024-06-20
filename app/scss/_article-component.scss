@@ -1,0 +1,143 @@
+.main-head {
+    margin-top: 40px;
+    &__title {
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 72px;
+    }
+}
+
+.author {
+    margin-top: 32px;
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    &__img {
+        margin-right: 32px;
+        border-radius: 32px 32px 32px 0;
+    }
+    &__link,
+    &__text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        color: $black;
+    }
+    &__link {
+        font-weight: 600;
+    }
+}
+.article-image {
+    margin-top: 72px;
+    &__img {
+        width: 100%;
+        border-radius: 64px 64px 64px 0;
+    }
+}
+.article-date-time {
+    margin-bottom: 56px;
+    margin-top: 24px;
+    &__date,
+    &__time,
+    &__icon {
+        display: inline-block;
+    }
+    &__date,
+    &__time {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        color: $black;
+        margin-right: 48px;
+    }
+    &__time {
+        display: inline-flex;
+        align-items: center;
+    }
+    &__icon {
+        margin-right: 12px;
+    }
+}
+.article-items {
+    margin-bottom: 56px;
+    &__dropbtn {
+        background-color: $red;
+        color: white;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+        text-align: left;
+        padding: 32px 46px;
+        border: none;
+        cursor: pointer;
+
+        border-radius: 32px 32px 32px 0;
+        // position: relaitve;
+        width: 332px;
+    }
+    &__dropbtn::before {
+        content: '+';
+        position: absolute;
+        right: 44px;
+        font-size: 40px;
+    }
+    /* Кнопка выпадающего меню при наведении и фокусировке */
+    // &__dropbtn:focus
+    &__dropbtn:hover {
+        background-color: #f3757f;
+    }
+
+    /* Контейнер <div> - необходим для размещения выпадающего содержимого */
+    &__dropdown {
+        position: relative;
+        display: inline-block;
+
+        width: 332px;
+    }
+
+    /* Выпадающее содержимое (скрыто по умолчанию) */
+    &__dropdown-content {
+        border-radius: 0 0 32px 0;
+        top: 90px;
+        display: none;
+        position: absolute;
+        background-color: $red;
+        /*   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0&__2); */
+        z-index: 1;
+        width: inherit;
+
+        padding-bottom: 26px;
+    }
+
+    /* Ссылки внутри выпадающего списка */
+    &__dropdown-content a {
+        color: #fff;
+        padding: 6px 46px;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        display: block;
+    }
+
+    /* Изменение цвета выпадающих ссылок при наведении курсора */
+    &__dropdown-content a:hover {
+        background-color: #f3757f;
+        // border-radius: 0 0 32px 0;
+    }
+}
+/* Показать выпадающее меню (используйте JS, чтобы добавить этот класс &__dropdown-content содержимого, когда пользователь нажимает на кнопку выпадающего списка) */
+.show {
+    display: block;
+    // margin-bottom: 8px;
+}
+.show-btn {
+    border-radius: 32px 32px 0 0;
+    // padding-bottom: 18px;
+}
+.show-btn.article-items__dropbtn::before {
+    content: '-';
+    font-size: 50px;
+}
