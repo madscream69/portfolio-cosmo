@@ -62,3 +62,6 @@ document
         //     console.log(item);
         // });
     });
+new SimpleBar(document.querySelector('.conclusion__recomendation-list'), {
+    autoHide: false,
+});

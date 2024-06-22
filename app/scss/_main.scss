@@ -8,13 +8,14 @@
         line-height: 56px;
         color: $black;
         margin-bottom: 24px;
+        margin-top: 56px;
     }
     &__text {
         font-weight: 400;
         font-size: 24px;
         line-height: 32px;
         color: $black;
-        margin-bottom: 56px;
+        // margin-bottom: 56px;
         & span {
             font-weight: 600;
         }
@@ -25,6 +26,7 @@
         line-height: 32px;
         color: $black;
         margin-bottom: 24px;
+        margin-top: 56px;
     }
     &__grey-bg {
         border-radius: 32px 32px 32px 0;
@@ -32,10 +34,38 @@
         height: 432px;
         background-color: $grey;
     }
+    &__example {
+        margin-top: 40px;
+    }
+    &__example-caption {
+        margin-top: 16px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: $black;
+    }
+    &__example-link {
+        color: $orange;
+        text-decoration: underline;
+    }
+    &__reference {
+        background-color: #ac93ef;
+        border-radius: 32px 32px 32px 0;
+        width: 100%;
+        padding: 40px 32px;
+        margin: 40px 0;
+    }
+    &__reference-text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        color: #fff;
+    }
 }
 .tabel-list {
     padding: 24px 32px;
     margin-bottom: 56px;
+    margin-top: 56px;
     width: 100%;
     background-color: $grey;
     border-radius: 32px 32px 32px 0;
