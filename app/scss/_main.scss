@@ -109,14 +109,40 @@
     &__class-list {
         margin-top: 16px;
     }
+    &__zodical-list {
+        margin-top: 32px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 16px;
+        grid-row-gap: 16px;
+    }
+    &__zodical-item {
+        text-align: center;
+        padding: 12px 0;
+        background-color: $grey;
+        border-radius: 16px 16px 16px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__zodical-link {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: $black;
+    }
 }
 .tabel-list {
     padding: 24px 32px;
     margin-bottom: 56px;
     margin-top: 56px;
     width: 100%;
-    background-color: $grey;
+    background-color: $light-grey;
     border-radius: 32px 32px 32px 0;
+    &--orange > p {
+        border-bottom: 1px solid $orange;
+    }
     &__title {
         font-weight: 400;
         font-size: 24px;
@@ -125,9 +151,6 @@
         padding-bottom: 8px;
         margin-bottom: 16px;
         border-bottom: 1px solid #ac93ef;
-        &--orange {
-            border-bottom: 1px solid $orange;
-        }
     }
     &__wrapper {
         display: flex;
