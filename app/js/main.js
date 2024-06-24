@@ -65,3 +65,16 @@ document
 new SimpleBar(document.querySelector('.conclusion__recomendation-list'), {
     autoHide: false,
 });
+
+lightGallery(document.getElementById('lightgallery'), {
+    // plugins: [lgZoom, lgThumbnail],
+    licenseKey: 'your_license_key',
+    speed: 500,
+    // ... other settings
+});
+lightGallery(document.getElementById('lightgallery2'), {
+    // plugins: [lgZoom, lgThumbnail],
+    licenseKey: 'your_license_key',
+    speed: 500,
+    // ... other settings
+});
