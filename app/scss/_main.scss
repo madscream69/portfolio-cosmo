@@ -41,6 +41,13 @@
         height: 432px;
         background-color: $grey;
     }
+    &__light-grey-bg {
+        border-radius: 32px 32px 32px 0;
+        width: 100%;
+        height: 432px;
+        background-color: $light-grey;
+        position: relative;
+    }
     &__example {
         margin-top: 40px;
     }
@@ -152,6 +159,73 @@
     }
     &__gallery-caption {
         margin-top: 30px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        color: $black;
+    }
+    &__planet-zoom {
+        position: relative;
+        margin-top: 56px;
+        & > p {
+            margin-bottom: 40px;
+        }
+    }
+    &__planet-img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__planet-btns {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    &__planet-btn {
+        background-color: #fff;
+        padding: 4px 12px;
+        cursor: pointer;
+    }
+    &__more {
+        margin: 24px 0 40px 0;
+        padding-left: 48px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../images/src/icons/arrow-orange-right.svg);
+            width: 32px;
+            height: 5px;
+            left: 0;
+            top: 50%;
+        }
+    }
+    &__more-link {
+        font-style: italic;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        text-decoration: underline;
+        color: $orange;
+    }
+    &__cards {
+        margin: 40px 0 40px 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 32px 40px;
+    }
+    &__card {
+        & > .main-content__grey-bg {
+            height: 312px;
+            margin-bottom: 16px;
+        }
+    }
+    &__card-text {
         font-weight: 400;
         font-size: 20px;
         line-height: 28px;
