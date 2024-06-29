@@ -42,6 +42,7 @@
         background-color: $grey;
     }
     &__light-grey-bg {
+        margin-top: 40px;
         border-radius: 32px 32px 32px 0;
         width: 100%;
         height: 432px;
@@ -231,6 +232,70 @@
         line-height: 28px;
         color: $black;
     }
+    &__swiper {
+        height: 320px;
+        position: relative;
+        margin-top: 40px;
+        margin-bottom: 24px;
+
+        & > .swiper-button-next::after,
+        & > .swiper-button-prev::after {
+            font-size: 20px;
+            background-color: $light-grey;
+            padding: 15px;
+        }
+        // & > .swiper-button-next::after,
+        & > .swiper-button-next {
+            &.swiper-button-disabled {
+                opacity: 0.5;
+            }
+            position: absolute;
+            bottom: 0;
+            right: 8px;
+            top: auto;
+            color: $black;
+        }
+        // & > .swiper-button-prev::after,
+        & > .swiper-button-prev {
+            &.swiper-button-disabled {
+                opacity: 0.5;
+            }
+
+            bottom: 0;
+            right: 56px;
+            top: auto;
+            left: auto;
+            color: $black;
+        }
+    }
+    &__swiper-slide {
+        width: 202px !important;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__line {
+        display: block;
+        background-color: $orange;
+        width: 100%;
+        height: 2px;
+        margin-top: 64px;
+    }
+}
+.slider__bg {
+    border-radius: 32px 32px 32px 0;
+    width: 100%;
+    height: 202px;
+    background-color: $grey;
+    box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+.slider__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .tabel-list {
     padding: 24px 32px;
@@ -261,5 +326,20 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 28px;
+    }
+}
+.main-video {
+    background-color: $black;
+    text-align: center;
+    min-height: 984px;
+    &__text {
+        // margin-top: 64px;
+        margin: 64px auto 0 auto;
+        max-width: 928px;
+        color: #fff;
+        text-align: center;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
     }
 }

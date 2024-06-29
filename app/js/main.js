@@ -78,3 +78,18 @@ lightGallery(document.getElementById('lightgallery2'), {
     speed: 500,
     // ... other settings
 });
+var swiper = new Swiper('.main-content__swiper', {
+    slidesPerView: 4,
+    spaceBetween: 16,
+    // centeredSlides: true,
+    // cssMode: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+    },
+    mousewheel: true,
+    keyboard: true,
+});
