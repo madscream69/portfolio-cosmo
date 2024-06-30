@@ -117,15 +117,18 @@
     &__class-list {
         margin-top: 16px;
     }
-    &__zodical-list {
+    &__buttons-list {
         margin-top: 32px;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(3, 1fr);
         grid-column-gap: 16px;
         grid-row-gap: 16px;
+        &--geography {
+            grid-template-rows: repeat(2, 1fr);
+        }
     }
-    &__zodical-item {
+    &__buttons-item {
         text-align: center;
         padding: 12px 0;
         background-color: $grey;
@@ -134,7 +137,7 @@
         justify-content: center;
         align-items: center;
     }
-    &__zodical-link {
+    &__buttons-link {
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
@@ -281,6 +284,40 @@
         width: 100%;
         height: 2px;
         margin-top: 64px;
+    }
+    &__article-description {
+        & > p {
+            margin-top: 16px;
+        }
+    }
+    &__themes {
+        margin-top: 32px;
+        margin-bottom: 56px;
+    }
+    &__theme {
+        padding: 8px 0;
+        border-top: 2px solid $grey;
+    }
+    &__theme,
+    &__theme-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__theme-wrapper {
+        gap: 24px;
+    }
+    &__theme-img {
+        width: 117px;
+        height: 72px;
+        border-radius: 16px 16px 16px 0;
+    }
+    &__theme-text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        color: $black;
     }
 }
 .slider__bg {
