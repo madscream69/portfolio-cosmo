@@ -182,3 +182,110 @@
         color: $orange;
     }
 }
+@media (max-width: 412px) {
+    .know {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    .know__info {
+        margin-bottom: 24px;
+    }
+    .know__info-title {
+        font-size: 28px;
+        line-height: 32px;
+        margin-bottom: 8px;
+    }
+    .know__info-text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .know__cards {
+        gap: 16px;
+    }
+    .know__card {
+        border-radius: 16px 16px 16px 0;
+
+        flex-basis: 47%;
+    }
+    .know__card-link {
+        border-radius: 16px 16px 16px 0;
+        padding: 8px;
+        gap: 4px;
+    }
+    .know__card-image {
+        width: 40px;
+        height: 40px;
+    }
+    .know__card-text {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .know__description {
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 24px;
+    }
+    .base {
+        padding-top: 48px;
+        padding-bottom: 76px;
+        background-position: center, left center;
+        background-size: cover;
+        background-image: url(../images/background_base_shape.png),
+            url(../images/background_base_mobile.webp);
+    }
+    .base__content {
+        width: 100%;
+    }
+    .base__content-title {
+        max-width: 245px;
+        font-size: 28px;
+        line-height: 32px;
+        margin-bottom: 24px;
+    }
+    .base__choose {
+        flex-direction: column;
+    }
+    .base__choose-subjects {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .classes {
+        justify-content: start;
+        margin-bottom: 24px;
+    }
+    .coaches {
+        padding-top: 48px;
+        padding-bottom: 92px;
+    }
+    .coaches__info-title {
+        font-size: 28px;
+        line-height: 32px;
+        margin-bottom: 8px;
+    }
+    .coaches__info-text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .coaches__list {
+        margin-top: 24px;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    .coaches__list-item {
+        flex-basis: 47%;
+    }
+    .coaches__list-image {
+        border-radius: 16px 16px 16px 0;
+        margin-bottom: 8px;
+    }
+    .coaches__list-link {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .coaches__list-desc {
+        font-size: 12px;
+        line-height: 16px;
+        display: block;
+    }
+}

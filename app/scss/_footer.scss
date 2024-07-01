@@ -128,3 +128,83 @@
     //     height: 220px;
     // }
 }
+@media (max-width: 412px) {
+    .footer {
+        padding-top: 48px;
+        max-height: 670px;
+
+        background-image: url(../images/ufo.png), url(../images/moon.png),
+            url(../images/background_footer.webp);
+        background-position: 90% 70%, 93% 11%, top center;
+        background-size: 118px 118px, 121px 121px, cover;
+    }
+    .footer__info {
+        margin-bottom: 32px;
+    }
+    .footer__info-title {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .footer__info-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .footer__menu {
+        flex-wrap: wrap;
+        padding-right: 0;
+        margin-bottom: 80px;
+    }
+    .footer__menu-title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 8px;
+    }
+    .footer__menu-item {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .footer__menu-agree {
+        display: none;
+    }
+    .footer__menu-social {
+        margin-bottom: 40px;
+    }
+    .footer__menu-agree--mobile {
+        margin-top: 40px;
+        display: block;
+        max-width: 200px;
+        & > a {
+            display: block;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            color: #fff;
+        }
+    }
+    .footer__bottom {
+        border: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__bottom-text {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+
+        width: 100%;
+        padding-bottom: 8px;
+        border-bottom: 1px solid $grey;
+    }
+    .footer__bottom-copy {
+        padding-top: 8px;
+
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+    }
+}

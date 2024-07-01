@@ -9,6 +9,9 @@
         display: flex;
         align-items: center;
         justify-content: start;
+        &::after {
+            display: none;
+        }
     }
     &__info {
         max-width: 600px;
@@ -23,5 +26,43 @@
     }
     &__info-text {
         color: #fff;
+    }
+}
+@media (max-width: 412px) {
+    .hello {
+        height: 332px;
+        background-position: center top;
+    }
+    .hello__wrapper {
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            background-image: url(../images/astronaut.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 234px;
+            width: 150px;
+            right: -6%;
+            transform: scaleX(-1);
+        }
+    }
+
+    .hello__cosmonaut {
+        display: none;
+    }
+    .hello__info {
+        max-width: 240px;
+        margin: 0;
+    }
+    .hello__info-title {
+        margin-bottom: 8px;
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .hello__info-text {
+        font-size: 16px;
+        line-height: 20px;
     }
 }

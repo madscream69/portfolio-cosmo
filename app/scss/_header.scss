@@ -87,3 +87,31 @@
         margin-right: 4px;
     }
 }
+@media (max-width: 412px) {
+    .header__menu.header__menu--open {
+        gap: 20px;
+        width: calc(
+            100% + 30px
+        ); /* Делаем ширину на 20px с каждой стороны больше */
+        margin-left: -15px; /* Сдвиг влево */
+        margin-right: -15px; /* Сдвиг вправо */
+        padding: 40px 16px;
+    }
+    .header__menu-title {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .header__menu-link {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+@media (max-width: 385px) {
+    .header__menu.header__menu--open {
+        flex-wrap: wrap;
+    }
+    .header__menu-social {
+        margin-right: 50px;
+    }
+}
