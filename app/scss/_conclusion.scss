@@ -179,3 +179,78 @@
     width: 6px;
     border-radius: 0;
 }
+
+@media (max-width: 412px) {
+    .conclusion {
+        margin-bottom: 40px;
+    }
+    .conclusion__inference {
+        margin-top: 8px;
+        margin-bottom: 24px;
+        border-radius: 16px 16px 16px 0;
+        padding: 16px;
+    }
+    .conclusion__inference-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .conclusion__share {
+        margin-bottom: 40px;
+    }
+    .conclusion__share-title {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 16px;
+    }
+    .conclusion__like {
+        margin-bottom: 40px;
+    }
+    .conclusion__like-title {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 4px;
+    }
+    .conclusion__like-text {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 8px;
+    }
+    .conclusion__like-rate {
+        align-items: center;
+    }
+    .conclusion__like-stars {
+        width: 124px;
+        height: 24px;
+    }
+    .conclusion__like-digits,
+    .conclusion__like-votes {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .conclusion__recomendation-text {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+    .conclusion__recomendation-item {
+        gap: 12px;
+        align-items: center;
+    }
+    .conclusion__recomendation-img {
+        border-radius: 16px 16px 16px 0;
+        width: 134px;
+        height: 80px;
+    }
+    .conclusion__recomendation-time {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .conclusion__recomendation-title {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
