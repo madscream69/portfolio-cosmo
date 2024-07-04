@@ -382,7 +382,7 @@
 }
 @media (max-width: 412px) {
     .main-content__title {
-        margin-top: 48px;
+        margin-top: 40px;
         margin-bottom: 8px;
         font-weight: 600;
         font-size: 24px;
@@ -424,5 +424,58 @@
     .main-content__grey-bg {
         height: 180px;
         border-radius: 16px 16px 16px 0;
+    }
+    .main-content__example {
+        margin-top: 24px;
+    }
+    .main-content__example-caption {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 8px;
+    }
+    .main-content__reference {
+        margin-top: 24px;
+        margin-bottom: 24px;
+        padding: 16px;
+        border-radius: 16px 16px 16px 0;
+    }
+    .main-content__reference-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .main-content__video-bg {
+        border-radius: 16px 16px 16px 0;
+        background-size: cover;
+        height: 180px;
+    }
+    .main-content__definition {
+        margin-top: 20px;
+    }
+    .main-content__definition-text {
+        padding-left: 32px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        &::before {
+            padding: 1px 12px;
+            top: 10px;
+        }
+    }
+    .main-content__min-title {
+        margin-top: 24px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .main-content__buttons-list {
+        margin-top: 28px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 12px;
+        grid-template-rows: auto;
+    }
+    .tabel-list__wrapper {
+        flex-wrap: wrap-reverse;
     }
 }
