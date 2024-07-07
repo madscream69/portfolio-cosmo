@@ -1,8 +1,9 @@
-const burgerBtn = document.querySelector('.header__burger-btn');
+const burgerBtn = document.querySelector('.header__burger');
 burgerBtn.addEventListener('click', () => {
     document
         .querySelector('.header__menu')
         .classList.toggle('header__menu--open');
+    document.querySelector('.header__burger').classList.toggle('active');
 });
 
 // document.querySelector('footer__bottom-copy').innerHTML =
